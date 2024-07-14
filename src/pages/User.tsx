@@ -9,7 +9,7 @@ const User = () => {
   const { stakedAmounts, refresh: refreshUserTxns } = useUserData(address);
   const { aoeth: aoethBalance, refresh: refreshAoethBalance } = useUserAoETH(address);
   useEffect(() => {
-    window.arweaveWallet?.connect;
+    window.arweaveWallet?.connect; // TODO: Do you want to call the connect function?
   }, []);
 
   const projects = useProjects();
