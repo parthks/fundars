@@ -35,14 +35,6 @@ Our future plans include expanding the platform's capabilities to offer more fin
 
 The Permissionless Ecosystem Funding Project is designed to empower users and projects alike. By making it easy to earn AO rewards and stake AoETH, we aim to create a vibrant and supportive ecosystem for innovation and growth.
 
-We invite you to join us on this journey and contribute to the success of the projects you are passionate about. For more information and to get started, please visit our [platform](https://arweavehh.vercel.app).
+We invite you to join us on this journey and contribute to the success of the projects you are passionate about. For more information and to get started, please visit our [platform](https://fundars.vercel.app).
 
 Thank you for your support!
-
----
-
-For any queries or support, feel free to contact us at [support@ecosystemfunding.com](mailto:support@ecosystemfunding.com).
-
-Happy Staking!
-
-**The Permissionless Ecosystem Funding Team**
