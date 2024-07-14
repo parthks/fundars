@@ -7,12 +7,16 @@ export default function Navbar() {
         <img alt="Home" src="/logo.svg" className="h-[30px] w-[150px]" />
       </a>
       <div className="flex gap-[120px] text-[#eeeeee] text-[18px] tracking-wider">
-        <a href="/about" className="hover:text-[#40959D] hover:underline underline-offset-[3px]">
+        {/* <Link to="/about" className="hover:text-[#40959D] hover:underline underline-offset-[3px]"> */}
+        <a href="#about" className="hover:text-[#40959D] hover:underline underline-offset-[3px]">
           About Us
         </a>
-        <a className="hover:text-[#40959D] hover:underline underline-offset-[3px]" href="/profile">
+        {/* </Link> */}
+        {/* <Link to="/profile" className="hover:text-[#40959D] hover:underline underline-offset-[3px]"> */}
+        <a className="hover:text-[#40959D] hover:underline underline-offset-[3px]" href="#profile">
           Your Profile
         </a>{" "}
+        {/* </Link> */}
         {/* <a
           className="hover:text-[#40959D] hover:underline underline-offset-[3px]"
           href="/profile"

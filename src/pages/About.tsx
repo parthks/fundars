@@ -16,10 +16,7 @@ export default function About() {
         className="capitalize pb-6 tracking-wide text-center md:font-normal font-medium
       xl:text-[30px] md:text-[21px] text-[21px]"
       >
-        Meet the amazing team behind{" "}
-        <span className={`font-[Regular] tracking-wide text-[#4FD2DE]`}>
-          TBD
-        </span>
+        Meet the amazing team behind <span className={`font-[Regular] tracking-wide text-[#4FD2DE]`}>FundARs</span>
       </h3>
 
       <div
@@ -29,27 +26,9 @@ export default function About() {
       hidden
       items-center justify-center"
       >
-        <TeamCard
-          pname="manishi"
-          dribble="https://dribbble.com/0xManishi"
-          twitter="https://x.com/0xManishi?t=FKn7XBJwlIXwJR-f4KGkzw&s=09"
-          info="Designer"
-          last={false}
-        />
-        <TeamCard
-          pname="lilith"
-          github="https://github.com/0xLPircy"
-          twitter="https://x.com/0xLPircy?t=Ppkfa4HmoEsfPMEeYJCisw&s=09"
-          info="Developer"
-          last={false}
-        />
-        <TeamCard
-          pname="parth"
-          github="https://github.com/parthks"
-          twitter="https://x.com/1human_in/"
-          info="Smart Contract Developer"
-          last={false}
-        />
+        <TeamCard pname="manishi" dribble="https://dribbble.com/0xManishi" twitter="https://x.com/0xManishi?t=FKn7XBJwlIXwJR-f4KGkzw&s=09" info="Designer" last={false} />
+        <TeamCard pname="lilith" github="https://github.com/0xLPircy" twitter="https://x.com/0xLPircy?t=Ppkfa4HmoEsfPMEeYJCisw&s=09" info="Developer" last={false} />
+        <TeamCard pname="parth" github="https://github.com/parthks" twitter="https://x.com/1human_in/" info="Smart Contract Developer" last={false} />
       </div>
     </main>
   );

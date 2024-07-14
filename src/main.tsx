@@ -18,10 +18,10 @@ const router = createHashRouter([
     element: <Layout />, // Use Layout as the main element
     children: [
       { path: "/", element: <App /> },
-      { path: "/project/:projectId", element: <Project /> },
-      { path: "/profile", element: <User /> },
-      { path: "/addProject", element: <AddProject /> },
-      { path: "/about", element: <About /> },
+      { path: "project/:projectId", element: <Project /> },
+      { path: "profile", element: <User /> },
+      { path: "addProject", element: <AddProject /> },
+      { path: "about", element: <About /> },
     ],
   },
 ]);
