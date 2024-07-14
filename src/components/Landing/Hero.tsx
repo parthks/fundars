@@ -1,6 +1,7 @@
 // import HeroStats from "./HeroStats";
 
 import { Link } from "react-router-dom";
+import HeroCircle from "/HeroCircle.svg";
 
 const Hero = () => {
   return (
@@ -15,16 +16,16 @@ const Hero = () => {
         </div> */}
 
         <div className="w-fit ltrAnim">
-          <img src="/HeroCircle.svg" className="w-[390px] h-[390px]" />
+          <img src={HeroCircle} className="w-[390px] h-[390px]" />
         </div>
         <div className="w-fit absolute inset-0 mx-auto rotate-[-90deg] z-0">
-          <img src="/HeroCircle.svg" className="w-[390px] h-[390px]" />
+          <img src={HeroCircle} className="w-[390px] h-[390px]" />
         </div>
         <h1 className="text-[39px] ttbAnim text-center font-[Rale-SemiBold] z-10 w-fit mx-[-120px]">
           Explore the <span className=" text-[#40959D] block">Permissonless Ecosystem Funding</span> platform on AO
         </h1>
         <div className="w-fit rtlAnim">
-          <img src="/HeroCircle.svg" className="w-[390px] h-[390px] rotate-180" />
+          <img src={HeroCircle} className="w-[390px] h-[390px] rotate-180" />
         </div>
         {/* <div className="flex flex-col justify-between items-center w-fit gap-28">
           <HeroStats stat="50%" text=" Projects Built on Arweave" />

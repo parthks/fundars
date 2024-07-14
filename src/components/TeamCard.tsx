@@ -6,9 +6,13 @@ interface TeamProps {
   twitter: string;
   info: string;
   last: boolean;
+  img: string;
 }
 
-const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info }) => {
+import TwitterIcon from "/icons/twitterTeam.svg";
+import GithubIcon from "/icons/githubTeam.svg";
+
+const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, img }) => {
   return (
     <div
       className={`ttbAnim teamWave text-center flex flex-col justify-start items-center
@@ -22,7 +26,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info }
         `}
     >
       <img
-        src={`/team/${pname}.png`}
+        src={img}
         height={150}
         width={150}
         alt={pname}
@@ -54,7 +58,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info }
       <div className=" flex flex-row xl:gap-3 gap-[9px] md:pt-3 pt-[3px]">
         <a href={twitter}>
           <img
-            src="/icons/twitterTeam.svg"
+            src={TwitterIcon}
             alt="x"
             height={30}
             width={30}
@@ -68,8 +72,8 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info }
         {github && (
           <a href={github}>
             <img
-              src="/icons/discTeam.svg"
-              alt="x"
+              src={GithubIcon}
+              alt="github"
               height={30}
               width={30}
               className="xl:w-[15px] xl:h-[15px]

@@ -1,5 +1,9 @@
 import TeamCard from "../components/TeamCard";
 
+import lilith from "/team/lilith.png";
+import manishi from "/team/manishi.png";
+import parth from "/team/parth.png";
+
 export default function About() {
   return (
     <main
@@ -26,9 +30,9 @@ export default function About() {
       hidden
       items-center justify-center"
       >
-        <TeamCard pname="manishi" dribble="https://dribbble.com/0xManishi" twitter="https://x.com/0xManishi?t=FKn7XBJwlIXwJR-f4KGkzw&s=09" info="Designer" last={false} />
-        <TeamCard pname="lilith" github="https://github.com/0xLPircy" twitter="https://x.com/0xLPircy?t=Ppkfa4HmoEsfPMEeYJCisw&s=09" info="Developer" last={false} />
-        <TeamCard pname="parth" github="https://github.com/parthks" twitter="https://x.com/1human_in/" info="Smart Contract Developer" last={false} />
+        <TeamCard img={manishi} pname="manishi" dribble="https://dribbble.com/0xManishi" twitter="https://x.com/0xManishi" info="Designer" last={false} />
+        <TeamCard img={lilith} pname="lilith" github="https://github.com/0xLPircy" twitter="https://x.com/0xLPircy" info="Developer" last={false} />
+        <TeamCard img={parth} pname="parth" github="https://github.com/parthks" twitter="https://x.com/1human_in/" info="Smart Contract Developer" last={false} />
       </div>
     </main>
   );
