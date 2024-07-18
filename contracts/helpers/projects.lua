@@ -49,7 +49,7 @@ PROJECTS = {
             {
                 name = "Lucifer0x17",
                 designation = "Founder",
-                photo = "https://arweavehh.vercel.app/founders/0rbitfounder1.png",
+                photo = "https://wh5yzmobmp5yd32aknbdwwejfiywvnshb74olhkbsb5zu45qtomq.arweave.net/sfuMscFj-4HvQFNCO1iJKjFqtkcP-OWdQZB7mnOwm5k",
             },
             {
                 name = "Megabyte",
