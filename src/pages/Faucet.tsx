@@ -52,7 +52,7 @@ export default function Faucet() {
           const promise = airdropTokens();
           toast.promise(promise, {
             loading: "Sending $tAoEth...",
-            success: (data) => {
+            success: (_) => {
               return `Sent $tAoEth to ${address}`;
             },
             error: "Please wait for some time before requesting an airdrop again!",
