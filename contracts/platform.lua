@@ -1,6 +1,6 @@
 local utils = require(".utils")
 local json = require("json")
-local constants = require("constants")
+local constants = require("helpers.constants")
 
 AOETH_TOKEN_PID = constants.AOETH_TOKEN_PID
 _OUR_CUT = constants._OUR_CUT
@@ -9,7 +9,7 @@ _OUR_CUT = constants._OUR_CUT
 
 -- Zr44oFbd4i9Tiq7SdoyPzmWxH_k-Fu_KtvbvgOjEv4s
 -- ENK3n22aHK0tSlDh54E1eXujnDroUgg8CPmUs8cfAKw - parth
-local PROJECTS = require("projects")
+local PROJECTS = require("helpers.projects")
 
 TRANSACTION = TRANSACTION or {}
 -- {

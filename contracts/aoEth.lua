@@ -4,6 +4,10 @@ local ao = require('ao')
 
 local json = require('json')
 
+-- Add the helpers directory to the package path
+package.path = package.path .. ";./helpers/?.lua"
+local faucetData = require('helpers.faucet')
+
 
 local utils = {
   add = function(a, b)
@@ -33,8 +37,8 @@ Variant = "0.0.3"
 Denomination = Denomination or 12
 Balances = Balances or { [ao.id] = utils.toBalanceValue(10000 * 10 ^ Denomination) }
 TotalSupply = TotalSupply or utils.toBalanceValue(10000 * 10 ^ Denomination)
-Name = Name or 'AO Ether'
-Ticker = Ticker or 'AOETH'
+Name = 'Test AO Ether'
+Ticker = 'tAoETH'
 Logo = Logo or 'SBCCXwwecBlDqRLUjb8dYABExTJXLieawf7m2aBJ-KY'
 
 --[[

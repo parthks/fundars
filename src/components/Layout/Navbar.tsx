@@ -17,6 +17,9 @@ export default function Navbar() {
         <a className="hover:text-[#40959D] hover:underline underline-offset-[3px]" href="#profile">
           Your Profile
         </a>{" "}
+        <a className="hover:text-[#40959D] hover:underline underline-offset-[3px]" href="#faucet">
+          Faucet
+        </a>{" "}
         {/* </Link> */}
         {/* <a
           className="hover:text-[#40959D] hover:underline underline-offset-[3px]"

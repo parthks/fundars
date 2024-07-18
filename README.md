@@ -1,10 +1,10 @@
 # Permissionless Ecosystem Funding Project
 
-Welcome to the Permissionless Ecosystem Funding Project! This README provides an overview of the project, its features, and future plans. Our current platform is a POC to show how AoETH rewards can be used in the AO ecosystem.
+Welcome to the Permissionless Ecosystem Funding Project! This README provides an overview of the project, its features, and future plans. Our current platform is a POC to show how AoETH rewards can be used in the AO ecosystem. For this we have created a **Test AoETh token (tAoETH)** to demonstrate and enable permissionless ecosystem funding for projects to integrate into.
 
 ## Introduction
 
-Our project aims to create a permissionless ecosystem where users can discover new projects and help them grow their communities. By leveraging AO rewards and the ability to stake AoETH, users can actively participate in the development and success of these projects.
+Our project aims to create a permissionless ecosystem where users can discover new projects and help them grow their communities. By leveraging AO rewards and the ability to stake AoETH, users can actively participate in the development and success of these projects. Since AoETH is not currently live, we have created tAoETH that simulates the AoETH token.
 
 ## Key Features
 
@@ -14,14 +14,14 @@ Users can effortlessly earn AO rewards by participating in the ecosystem. Our pl
 
 ### Staking AoETH
 
-Users have the ability to stake AoETH with various projects. By staking, users receive project tokens in return. This process not only supports the projects but also allows users to become stakeholders and benefit from the project's growth.
+Users have the ability to stake AoETH (tAoETH for now) with various projects. By staking, users receive project tokens in return. This process not only supports the projects but also allows users to become stakeholders and benefit from the project's growth.
 
 ## Platform Overview
 
 1. **Project Discovery**: Our platform provides a comprehensive list of projects for users to explore. Each project includes detailed information, goals, and progress updates.
 2. **Community Growth**: Projects can leverage the platform to grow their communities, attract supporters, and gain valuable feedback.
 
-3. **Staking and Rewards**: Users can stake AoETH with their favorite projects and earn project tokens. The staking process is straightforward and designed to maximize user engagement and rewards.
+3. **Staking and Rewards**: Users can stake AoETH (tAoETH for now) with their favorite projects and earn project tokens. The staking process is straightforward and designed to maximize user engagement and rewards.
 
 ## Future Plans
 
@@ -33,7 +33,7 @@ Our future plans include expanding the platform's capabilities to offer more fin
 
 ## Conclusion
 
-The Permissionless Ecosystem Funding Project is designed to empower users and projects alike. By making it easy to earn AO rewards and stake AoETH, we aim to create a vibrant and supportive ecosystem for innovation and growth.
+The Permissionless Ecosystem Funding Project is designed to empower users and projects alike. By making it easy to earn AO rewards and stake AoETH, we aim to create a vibrant and supportive ecosystem for innovation and growth. Visit our facucet to get tAoETH and experience the future of Permissionless Ecosystem Funding now!
 
 We invite you to join us on this journey and contribute to the success of the projects you are passionate about. For more information and to get started, please visit our [platform](https://fundars.vercel.app).
 

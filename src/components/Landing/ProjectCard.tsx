@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: { project: ProjectType }) {
         <div className=" font-[Rale-SemiBold] text-[#40959D] text-[24px]">{project.name}</div>
         <div className="rounded-sm px-[12px] flex flex-row py-[3px] bg-[#393939] w-fit text-[#f1f1f1]">${project.ticker}</div>
         <p className="text-[15px] text-justify text-wrap text-[#f1f1f1] font-[Rale-Light] leading-[18px]">{project.description}</p>
-        <h3 className="font-[Rale-Medium] text-[#40959D]">{(project.amountStaked / 10 ** 12).toFixed(2)} $AOEth Staked</h3>
+        <h3 className="font-[Rale-Medium] text-[#40959D]">{(project.amountStaked / 10 ** 12).toFixed(2)} $tAoEth Staked</h3>
       </div>
     </Link>
   );

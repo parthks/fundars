@@ -91,18 +91,10 @@ export function useProject(id: string) {
 }
 
 export function useUserData(address?: string) {
-  const [allTransactions, setAllTransactions] = useState<
-    UserTransaction[] | null
-  >(null);
-  const [pendingTransactions, setPendingTransactions] = useState<
-    UserTransaction[] | null
-  >(null);
-  const [confirmedTransactions, setConfirmedTransactions] = useState<
-    UserTransaction[] | null
-  >(null);
-  const [stakedAmounts, setStakedAmounts] = useState<StakedAmounts | null>(
-    null
-  );
+  const [allTransactions, setAllTransactions] = useState<UserTransaction[] | null>(null);
+  const [pendingTransactions, setPendingTransactions] = useState<UserTransaction[] | null>(null);
+  const [confirmedTransactions, setConfirmedTransactions] = useState<UserTransaction[] | null>(null);
+  const [stakedAmounts, setStakedAmounts] = useState<StakedAmounts | null>(null);
 
   const getNewData = async () => {
     if (!address) return;
@@ -114,26 +106,17 @@ export function useUserData(address?: string) {
     });
     console.log("get user data result", result);
     const transactions = JSON.parse(result.Messages[0].Data)?.msg ?? [];
-    const pendingTransactions = transactions.filter(
-      (t: UserTransaction) => !t.ptSent
-    );
-    const confirmedTransactions = transactions.filter(
-      (t: UserTransaction) => t.ptSent && !t.amtUnstaked
-    );
+    const pendingTransactions = transactions.filter((t: UserTransaction) => !t.ptSent);
+    const confirmedTransactions = transactions.filter((t: UserTransaction) => t.ptSent && !t.amtUnstaked);
 
-    const stakedAmounts = confirmedTransactions.reduce(
-      (acc: StakedAmounts, t: UserTransaction) => {
-        const projectTicker = t.projectTicker;
-        if (!acc[projectTicker])
-          acc[projectTicker] = { aoeth: 0, projectToken: 0 };
-        acc[projectTicker].aoeth += parseInt(t.aoEthQuantity) / 10 ** 12;
-        acc[projectTicker].projectToken +=
-          parseInt(t.ProjectTokenReceived) / 10 ** 12;
+    const stakedAmounts = confirmedTransactions.reduce((acc: StakedAmounts, t: UserTransaction) => {
+      const projectTicker = t.projectTicker;
+      if (!acc[projectTicker]) acc[projectTicker] = { aoeth: 0, projectToken: 0 };
+      acc[projectTicker].aoeth += parseInt(t.aoEthQuantity) / 10 ** 12;
+      acc[projectTicker].projectToken += parseInt(t.ProjectTokenReceived) / 10 ** 12;
 
-        return acc;
-      },
-      {} as StakedAmounts
-    );
+      return acc;
+    }, {} as StakedAmounts);
     setStakedAmounts(stakedAmounts);
 
     setAllTransactions(transactions);
@@ -176,7 +159,7 @@ export function useUserAoETH(address?: string) {
       anchor: "1234",
     });
     const aoeth = JSON.parse(result.Messages[0].Data);
-    console.log("got aoeth", aoeth);
+    console.log("got taoeth", aoeth);
     setAoeth(aoeth / 10 ** 12);
   };
   useEffect(() => {
@@ -192,8 +175,7 @@ export function useUserAoETH(address?: string) {
 
 export const useStakeLoader = (projectData: ProjectType, address?: string) => {
   const [receivedAoETH, setRecievedAoETH] = useState<boolean>(false);
-  const [projectConfirmedStake, setProjectConfirmedStake] =
-    useState<boolean>(false);
+  const [projectConfirmedStake, setProjectConfirmedStake] = useState<boolean>(false);
   const [rewardsSent, setRewardsSent] = useState<boolean>(false);
 
   const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
@@ -215,26 +197,12 @@ export const useStakeLoader = (projectData: ProjectType, address?: string) => {
           anchor: "1234",
         });
         const transactions = JSON.parse(result.Messages[0].Data)?.msg ?? [];
-        const currentTrx = transactions.filter(
-          (t: UserTransaction) =>
-            new Date(t.date) > startDate &&
-            t.projectTicker == projectData.ticker
-        );
+        const currentTrx = transactions.filter((t: UserTransaction) => new Date(t.date) > startDate && t.projectTicker == projectData.ticker);
         console.log({ transactions, currentTrx });
         if (currentTrx.length > 0) setRecievedAoETH(true);
-        const ptReceived = transactions.filter(
-          (t: UserTransaction) =>
-            new Date(t.date) > startDate &&
-            t.ptReceived &&
-            t.projectTicker == projectData.ticker
-        );
+        const ptReceived = transactions.filter((t: UserTransaction) => new Date(t.date) > startDate && t.ptReceived && t.projectTicker == projectData.ticker);
         if (ptReceived.length > 0) setProjectConfirmedStake(true);
-        const rewardsSent = transactions.filter(
-          (t: UserTransaction) =>
-            new Date(t.date) > startDate &&
-            t.ptSent &&
-            t.projectTicker == projectData.ticker
-        );
+        const rewardsSent = transactions.filter((t: UserTransaction) => new Date(t.date) > startDate && t.ptSent && t.projectTicker == projectData.ticker);
         if (rewardsSent.length > 0) setRewardsSent(true);
       }, 500)
     );

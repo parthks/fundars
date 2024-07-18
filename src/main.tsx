@@ -11,6 +11,8 @@ import About from "./pages/About.tsx";
 import AddProject from "./pages/AddProject.tsx";
 import Project from "./pages/Project.tsx";
 import User from "./pages/User.tsx";
+import Faucet from "./pages/Faucet.tsx";
+import { Toaster } from "sonner";
 
 const router = createHashRouter([
   {
@@ -21,6 +23,7 @@ const router = createHashRouter([
       { path: "project/:projectId", element: <Project /> },
       { path: "profile", element: <User /> },
       { path: "addProject", element: <AddProject /> },
+      { path: "faucet", element: <Faucet /> },
       { path: "about", element: <About /> },
     ],
   },
@@ -62,6 +65,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       }}
     >
       <div className="font-[Rale-Regular] min-h-screen flex flex-col justify-between gap-12 lining-figures">
+        <Toaster />
         <Navbar />
         {/* @ts-expect-error types wrong with router */}
         <RouterProvider router={router}>

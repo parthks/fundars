@@ -1,13 +1,16 @@
 -- dummy process 1wsCJtrztr99c3Qw5ENVfhr59SLjpjRODXCLwE3OZYU
 -- esha pwqHpclb9H39d-XmuU-RfMRBRu4GjzX7v5SWlBGZhsY
 
-local constants = require("constants")
+local constants = require("helpers.constants")
 
 _SATP_VAL = 10
 Ticker = "SAT"
 _SATP_TOKEN = constants.SATURN_TOKEN_PID
 
 PLATFORM_PID = constants.PLATFORM_PID
+
+-- TODO: Another notif handler to let the project know that the user has unstaked
+aoEthRecieved = aoEthRecieved or 0
 
 
 Handlers.add(
@@ -22,6 +25,7 @@ Handlers.add(
 
         -- Formua to calculate the amount to send - TODO
         local ToSend = math.floor(msg.Quantity * _SATP_VAL)
+        aoEthRecieved = aoEthRecieved + tonumber(msg.Quantity)
 
         print("to send" .. tostring(ToSend))
         ao.send({
