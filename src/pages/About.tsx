@@ -1,9 +1,5 @@
 import TeamCard from "../components/TeamCard";
 
-import lilith from "/team/lilith.png";
-import manishi from "/team/manishi.png";
-import parth from "/team/parth.png";
-
 export default function About() {
   return (
     <main
@@ -30,9 +26,30 @@ export default function About() {
       hidden
       items-center justify-center"
       >
-        <TeamCard img={manishi} pname="manishi" dribble="https://dribbble.com/0xManishi" twitter="https://x.com/0xManishi" info="Designer" last={false} />
-        <TeamCard img={lilith} pname="lilith" github="https://github.com/0xLPircy" twitter="https://x.com/0xLPircy" info="Developer" last={false} />
-        <TeamCard img={parth} pname="parth" github="https://github.com/parthks" twitter="https://x.com/1human_in/" info="Smart Contract Developer" last={false} />
+        <TeamCard
+          img={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/team/manishi.png"}
+          pname="manishi"
+          dribble="https://dribbble.com/0xManishi"
+          twitter="https://x.com/0xManishi"
+          info="Designer"
+          last={false}
+        />
+        <TeamCard
+          img={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/team/lilith.png"}
+          pname="lilith"
+          github="https://github.com/0xLPircy"
+          twitter="https://x.com/0xLPircy"
+          info="Developer"
+          last={false}
+        />
+        <TeamCard
+          img={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/team/parth.png"}
+          pname="parth"
+          github="https://github.com/parthks"
+          twitter="https://x.com/1human_in/"
+          info="Smart Contract Developer"
+          last={false}
+        />
       </div>
     </main>
   );
