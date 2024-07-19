@@ -1,4 +1,4 @@
-import { useActiveAddress } from "arweave-wallet-kit";
+import { ConnectButton, useActiveAddress } from "arweave-wallet-kit";
 import { useUserAoETH } from "../utils/hooks";
 import { useState } from "react";
 import Loader from "../components/Loader";
@@ -11,6 +11,13 @@ export default function Faucet() {
   // const { connected } = useConnection();
   const { aoeth: aoethBalance, refresh: refreshAoethBalance } = useUserAoETH(address);
   const [loading, setLoading] = useState(false);
+
+  if (!address)
+    return (
+      <div className="text-white flex justify-center items-start h-60">
+        <ConnectButton />
+      </div>
+    );
 
   const airdropTokens = async () => {
     setLoading(true);

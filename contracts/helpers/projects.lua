@@ -11,7 +11,7 @@ PROJECTS = {
         amountStaked = 0,
         name = "Saturn",
         description = "A test project for you to stake tAoETH and earn SATP to experience the the power of permissionless ecosystem funding",
-        logo = "https://arweavehh.vercel.app/SATP.svg",
+        logo = "https://wkypibie7ccprx5ujbbqddvhyotazjdchydxq6w4pd6j7hik5ipa.arweave.net/srD0BQT4hPjftEhDAY6nw6YMpGI-B3h63Hj8n50K6h4",
         ticker = "SATP",
         cooldownPeriod = 60,  -- 60 seconds
         aoethRewardRate = 10, -- for 1 aoeth, how many tokens of reward
@@ -19,12 +19,12 @@ PROJECTS = {
             {
                 name = "Alice Johnson",
                 designation = "CEO",
-                photo = "https://arweavehh.vercel.app/founders/saturnfounder1.png",
+                photo = "https://jh2ukzgb546squzma2zxtkr6ckignjy7c6thm7xhe43aj7q3norq.arweave.net/SfVFZMHvPShTLAazeao-EpBmpx8XpnZ-5yc2BP4ba6M",
             },
             {
                 name = "Bob Smith",
                 designation = "CTO",
-                photo = "https://arweavehh.vercel.app/founders/saturnfounder2.png"
+                photo = "https://3v7icsuojvbggeifpyk6avvv5pz4vueyaj3kmzu65xvf5msqlgaq.arweave.net/3X6BSo5NQmMRBX4V4Fa16_PK0JgCdqZmnu3qXrJQWYE"
             },
         },
         socials = {
@@ -41,7 +41,7 @@ PROJECTS = {
         amountStaked = 0,
         name = "0rbit",
         description = "Decentralized Oracle Network on Arweave | Get ACCESS to LIMITLESS DATA",
-        logo = "https://arweavehh.vercel.app/0RBT.svg",
+        logo = "https://c4mz3c5iyyh5ok6lqdmhy7kyw4qp4bujf6tncfudhkeqp47r5vga.arweave.net/Fxmdi6jGD9cry4DYfH1YtyD-BokvptEWgzqJB_Px7Uw",
         ticker = "0RBT",
         cooldownPeriod = 60 * 60 * 24 * 3, -- 3 days in seconds
         aoethRewardRate = 30,              -- for 1 aoeth, how many tokens of reward
@@ -54,7 +54,7 @@ PROJECTS = {
             {
                 name = "Megabyte",
                 designation = "Co-Founder",
-                photo = "https://arweavehh.vercel.app/founders/0rbitfounder2.png",
+                photo = "https://dzych6fmqu3qtu6m65f4xnrl7rqfa43qb46vdnufm52dy633p4uq.arweave.net/HnAj-KyFNwnTzPdLy7Yr_GBQc3APPVG2hWd0PHt7fyk",
             },
         },
         socials = {
@@ -71,7 +71,7 @@ PROJECTS = {
         amountStaked = 0,
         name = "BetterIDEa",
         description = "One stop env for devs on Arweave",
-        logo = "https://arweavehh.vercel.app/NEO.svg",
+        logo = "https://3tbwnreigoo66tkk6flg3iu4ychsb3tfcxmcqef3yrawt3k2raba.arweave.net/3MNmxIgzne9NSvFWbaKcwI8g7mUV2CgQu8RBae1aiAI",
         ticker = "NEO",
         cooldownPeriod = 60 * 60 * 24 * 3, -- 3 days in seconds
         aoethRewardRate = 30,              -- for 1 aoeth, how many tokens of reward
@@ -79,12 +79,12 @@ PROJECTS = {
             {
                 name = "Ankush",
                 designation = "Founder",
-                photo = "https://arweavehh.vercel.app/founders/betterideafounder1.png",
+                photo = "https://jfudcx3lve5x2hpxq3imp2zev7yn7vcahyjkru5gfuozdbbnjtja.arweave.net/SWgxX2upO30d94bQx-skr_Df1EA-EqjTpi0dkYQtTNI",
             },
             {
                 name = "Farat",
                 designation = "Principle Designer",
-                photo = "https://arweavehh.vercel.app/founders/betterideafounder2.png",
+                photo = "https://476peplyggustplk7fd5txyoi7fjltce7yspwlezvivu6e2lcdra.arweave.net/5_zyPXgxqSm9avlH2d8OR8qVzET-JPssmaorTxNLEOI",
             },
         },
         socials = {
@@ -102,7 +102,7 @@ PROJECTS = {
         name = "Rebel",
         description =
         "Session based Web3 Cloud Gamming Infrastructure focused on providing quality experience to all users",
-        logo = "https://arweavehh.vercel.app/rebel.png",
+        logo = "https://fuxzon4lhbav6tfkhdyyfe5bwpea6ool5gqyabvosk3dpmscjqma.arweave.net/LS-XN4s4QV9MqjjxgpOhs8gPOcvpoYAGrpK2N7JCTBg",
         ticker = "NAP",
         cooldownPeriod = 60 * 60 * 24 * 3, -- 3 days in seconds
         aoethRewardRate = 30,              -- for 1 aoeth, how many tokens of reward
@@ -132,7 +132,7 @@ PROJECTS = {
         amountStaked = 0,
         name = "AOVest",
         description = "Token Vesting for projects to implement streaming of their tokens",
-        logo = "https://arweavehh.vercel.app/VCOIN.jpeg",
+        logo = "https://eo6jgj7iaexzia5lsuznbkae7dj42nvpb2lygxqbi3nrf54ex5ka.arweave.net/I7yTJ-gBL5QDq5Uy0KgE-NPNNq8Ol4NeAUbbEveEv1Q",
         ticker = "VCOIN",
         cooldownPeriod = 60 * 60 * 24 * 3, -- 3 days in seconds
         aoethRewardRate = 30,              -- for 1 aoeth, how many tokens of reward
@@ -167,7 +167,7 @@ PROJECTS = {
         amountStaked = 0,
         name = "Smart Auditing and Monitoring",
         description = "Vulnerabilities auditing on us, contracting is on you",
-        logo = "https://arweavehh.vercel.app/vite.svg",
+        logo = "https://qb66im5wls6u5465glwjhj3vzmjc7ivgmuqtzz6wvkq5xgizz42q.arweave.net/gH3kM7ZcvU7z3TLsk6d1yxIvoqZlITzn1qqh25kZzzU",
         ticker = "SAM",
         cooldownPeriod = 60 * 60 * 24 * 3, -- 3 days in seconds
         aoethRewardRate = 30,              -- for 1 aoeth, how many tokens of reward
@@ -207,7 +207,7 @@ PROJECTS = {
         amountStaked = 0,
         name = "The LOOM",
         description = "A Metaverse on AO",
-        logo = "https://arweavehh.vercel.app/loom.jpeg",
+        logo = "https://hkbgs7qt6kqcg5wvgk4jxohllv64qgsrig6dndydnb6euve6unia.arweave.net/OoJpfhPyoCN21TK4m7jrXX3IGlFBvDaPA2h8SlSeo1A",
         ticker = "LOOM",
         cooldownPeriod = 60 * 60 * 24 * 3, -- 3 days in seconds
         aoethRewardRate = 30,              -- for 1 aoeth, how many tokens of reward

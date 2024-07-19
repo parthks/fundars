@@ -1,8 +1,3 @@
-import website from "/icons/website.svg";
-import discord from "/icons/discord.svg";
-import github from "/icons/github.svg";
-import x from "/icons/x.svg";
-
 import { ProjectType } from "../types/Project";
 import { stake } from "../utils/stake";
 import { ConnectButton, useActiveAddress } from "arweave-wallet-kit";
@@ -90,22 +85,42 @@ export default function ProjectFull({ project }: { project: ProjectType }) {
           <div className="flex flex-col gap-4 items-start justify-start text-[#f1f1f1] underline">
             {project.socials.website && (
               <a href={project.socials.website} className="flex flex-row gap-[15px]">
-                <img alt="website link" src={website} className=" h-[30px] w-[30px] text-customBlue rounded-full"></img> <h6>{project.socials.website}</h6>
+                <img
+                  alt="website link"
+                  src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/website.svg"}
+                  className=" h-[30px] w-[30px] text-customBlue rounded-full"
+                ></img>{" "}
+                <h6>{project.socials.website}</h6>
               </a>
             )}
             {project.socials.github && (
               <a href={project.socials.github} className="flex flex-row gap-[15px]">
-                <img alt="github link" src={github} className=" h-[30px] w-[30px] text-customBlue rounded-full"></img> <h6>{project.socials.github}</h6>
+                <img
+                  alt="github link"
+                  src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/github.svg"}
+                  className=" h-[30px] w-[30px] text-customBlue rounded-full"
+                ></img>{" "}
+                <h6>{project.socials.github}</h6>
               </a>
             )}
             {project.socials.x && (
               <a href={project.socials.x} className="flex flex-row gap-[15px]">
-                <img alt="x link" src={x} className=" h-[30px] w-[30px] text-customBlue rounded-full"></img> <h6>{project.socials.x}</h6>
+                <img
+                  alt="x link"
+                  src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/x.svg"}
+                  className=" h-[30px] w-[30px] text-customBlue rounded-full"
+                ></img>{" "}
+                <h6>{project.socials.x}</h6>
               </a>
             )}
             {project.socials.discord && (
               <a href={project.socials.discord} className="flex flex-row gap-[15px]">
-                <img alt="discord link" src={discord} className=" h-[30px] w-[30px] text-customBlue rounded-full"></img> <h6>{project.socials.discord}</h6>
+                <img
+                  alt="discord link"
+                  src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/discord.svg"}
+                  className=" h-[30px] w-[30px] text-customBlue rounded-full"
+                ></img>{" "}
+                <h6>{project.socials.discord}</h6>
               </a>
             )}
           </div>

@@ -9,9 +9,6 @@ interface TeamProps {
   img: string;
 }
 
-import TwitterIcon from "/icons/twitterTeam.svg";
-import GithubIcon from "/icons/githubTeam.svg";
-
 const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, img }) => {
   return (
     <div
@@ -58,7 +55,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
       <div className=" flex flex-row xl:gap-3 gap-[9px] md:pt-3 pt-[3px]">
         <a href={twitter}>
           <img
-            src={TwitterIcon}
+            src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/twitterTeam.svg"}
             alt="x"
             height={30}
             width={30}
@@ -72,7 +69,7 @@ const TeamCard: React.FC<TeamProps> = ({ pname, github, dribble, twitter, info, 
         {github && (
           <a href={github}>
             <img
-              src={GithubIcon}
+              src={"https://ykxdc44ycigwbzizbvfquofna2yx2tkn3e6fx5zjltzbjfpbeqcq.arweave.net/wq4xc5gSDWDlGQ1LCjitBrF9TU3ZPFv3KVzyFJXhJAU/icons/githubTeam.svg"}
               alt="github"
               height={30}
               width={30}
